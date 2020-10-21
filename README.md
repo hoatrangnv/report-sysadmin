@@ -71,3 +71,20 @@ Công việc của System Admin gồm có:
 - **Lệnh ls - list**  
 `ls` liệt kê nội dung (file và thư mục) trong thư mục hiện hành. Nó cũng tương tự với việc bạn mở một thư mục và xem nội dung trong đó trên giao diện người dùng.
 <img src=https://i.imgur.com/xiKWnGw.png>
+
+- **Lệnh cat - concatenate and print files**
+`cat` đọc và in ra nội dung của file ra màn hình.
+<img src=https://i.imgur.com/czm6KtM.png>
+
+- **Lệnh more**
+`more` dùng mở một tệp để đọc tương tác, cho phép di chuyển lên xuống và tìm kiếm.  
+```
+Dưới đây là một số tùy chọn điển hình của lệnh **more**:  
+    -num: Chỉ định kích thước màn hình (số dòng).
+    -d: more sẽ hiện lên thông báo "[Press space to continue, 'q' to quit.]" và hiển thị "[Press 'h' for instructions.]" thay vì tiếng chuông reo khi nhấn sai ký tự.
+    -l: more luôn luôn xử lý ^L (ký tự nạp giấy) như là ký tự đặc biệt, và dừng lại sau dòng có ký tự này.
+    -f: Khiến more đếm một cách logic, thay vì tính theo dòng hiển thị (ví dụ dòng dài không được bẻ dòng).
+    -p: Không cuộn, thay vào đó xóa màn hình và hiển thị trang kế.
+    -c: Không cuộn.
+```
+<img src=https://i.imgur.com/jZGEUuB.png>
