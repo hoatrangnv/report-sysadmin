@@ -46,7 +46,7 @@
 <a name="introduction"></a>
 # I. Introduction
 
-**System Admin (Sysadmin) chịu trách nhiệm thiết lập và bảo trì hệ thống máy tính. Họ đảm bảo rằng các máy tính trong mạng của công ty, đặc biệt là máy chủ vận hành trơn tru và an toàn. **\
+**System Admin (Sysadmin) chịu trách nhiệm thiết lập và bảo trì hệ thống máy tính. Họ đảm bảo rằng các máy tính trong mạng của công ty, đặc biệt là máy chủ vận hành trơn tru và an toàn. **/
 
 Vai trò của một `System Admin (Sysadmin)` chủ yếu tập trung vào 
 vận hành hệ thống công nghệ thông tin, ngăn chặn sự cố 
