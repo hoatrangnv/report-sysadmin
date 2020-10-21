@@ -10,7 +10,7 @@
 [IV. File System](#filesystem)  
 - [1. Layout](#layout)
 - [2. EXT4,XFS,BtrFS,...](#etx4xfs)
-- [3. Làm việc với disk, format, mount file, fstab (async,noatime,rw,ro,remount)](#lamviecvoi)
+- [3. Làm việc với disk, format, mount file, fstab (async, noatime, rw, ro, remount)](#lamviecvoi)
 - [4. Inode, symlink, hardlink](#inode)  
 
 [V. Package Management](#packagemanagement)  
