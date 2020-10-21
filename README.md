@@ -125,10 +125,10 @@ Vi Editor là trình soạn thảo văn bản ban đầu được tạo ra cho h
 `sudo apt-get install vim`  
 Bộ soạn thảo **vi/vim** chạy ở hai chế độ khác nhau:  
 
-- Chế độ dòng lệnh command mode, những gì được gõ vào sẽ được hiểu như là lệnh của vi. Vi có rất nhiều lệnh như: tìm kiếm, thay thế, xóa, lưu tâp tin…
-- Chế độ nhập văn bản insert mode, những gì được gõ vào được hiểu là nội dung của tập tin đang soạn thảo.
+- Chế độ dòng lệnh **command mode**, những gì được gõ vào sẽ được hiểu như là lệnh của vi. Vi có rất nhiều lệnh như: tìm kiếm, thay thế, xóa, lưu tâp tin…
+- Chế độ nhập văn bản **insert mode**, những gì được gõ vào được hiểu là nội dung của tập tin đang soạn thảo.
 
-Khi bắt đầu sử dụng lệnh **vi**, **vi** mặc định ở command mode. Ấn phím lệnh **i, a, o** hoặc **Inserrt** từ chế độ command mode để chuyển sang insert mode. Ấn **Esc** để chuyển đổi qua lại từ command mode với insert mode.  
+Khi bắt đầu sử dụng lệnh **vi**, **vi** mặc định ở **command mode**. Ấn phím lệnh **i, a, o** hoặc **Inserrt** từ chế độ **command mode** để chuyển sang **insert mode**. Ấn **Esc** để chuyển đổi qua lại từ command mode với insert mode.  
 Một số lệnh với **vi**:
 
 - **:set nu** hiện thị số dòng
