@@ -1,19 +1,21 @@
 # Những điều cần biết cho sysadmin!
 
 ## MỤC LỤC  
-[I. Working with file](#workingwithfile)  
+[I. Introduction](#introduction)
 
-[II. Redirect](#redirect)  
+[II. Working with file](#workingwithfile)  
 
-[III. File System](#filesystem)  
+[III. Redirect](#redirect)  
+
+[IV. File System](#filesystem)  
 - [1. Layout](#layout)
 - [2. EXT4,XFS,BtrFS,...](#etx4xfs)
 - [3. Làm việc với disk, format, mount file, fstab (async,noatime,rw,ro,remount)](#lamviecvoi)
 - [4. Inode, symlink, hardlink](#inode)  
 
-[IV. Package Management](#packagemanagement)  
+[V. Package Management](#packagemanagement)  
 
-[V. Boot process](#bootprocess)
+[VI. Boot process](#bootprocess)
 - [1. Power Supply Unit](#power)
 - [2. BIOS and CMOS](#biosandcmos)
 - [3. POST tests](#posttests)
@@ -24,7 +26,7 @@
 - [8. Runlevels](#runlevels)
 - [9. Getty](#getty)  
 
-[VI. Tools](#tools)
+[VII. Tools](#tools)
 - [1. Tunnel all traffic](#tunnelalltraffic)
 - [2. Reverse Tunneling](#reversetunneling)
 - [3. Tunneling stdin and stdout](#tunnelingstdin)  
