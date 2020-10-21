@@ -68,6 +68,6 @@ Công việc của System Admin gồm có:
 <a name="workingwithfile"></a>
 # II. Working with file
 
-- ls
+- **ls**  
 `ls` liệt kê nội dung (file và thư mục) trong thư mục hiện hành. Nó cũng tương tự với việc bạn mở một thư mục và xem nội dung trong đó trên giao diện người dùng.
 <img src=https://i.imgur.com/xiKWnGw.png>
