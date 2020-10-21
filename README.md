@@ -79,12 +79,72 @@ Công việc của System Admin gồm có:
 - **Lệnh more**
 `more` dùng mở một tệp để đọc tương tác, cho phép di chuyển lên xuống và tìm kiếm.  
 ```
-Dưới đây là một số tùy chọn điển hình của lệnh **more**:  
+Dưới đây là một số tùy chọn điển hình của lệnh #more :  
     -num: Chỉ định kích thước màn hình (số dòng).
     -d: more sẽ hiện lên thông báo "[Press space to continue, 'q' to quit.]" và hiển thị "[Press 'h' for instructions.]" thay vì tiếng chuông reo khi nhấn sai ký tự.
     -l: more luôn luôn xử lý ^L (ký tự nạp giấy) như là ký tự đặc biệt, và dừng lại sau dòng có ký tự này.
     -f: Khiến more đếm một cách logic, thay vì tính theo dòng hiển thị (ví dụ dòng dài không được bẻ dòng).
     -p: Không cuộn, thay vào đó xóa màn hình và hiển thị trang kế.
-    -c: Không cuộn.
+    -c: Không cuộn, thay vào đó khi kéo màn hình từ trễn xuống, sẽ xóa phần còn lại của mỗi dòng khi nó được hiển thị.
 ```
 <img src=https://i.imgur.com/tdk6f2v.png>
+
+- **Lệnh tail - print TAIL**
+`tail` dùng để xem những dòng đầu của tệp tin (theo mặc định là 10 dòng). Lệnh tail rất hữu ích khi khắc phục sự cố tệp nhật ký.
+```
+tail [tùy chọn] [tên file]
+
+Tùy chọn có thể là:
+    -n, --lines=[-]n: In số dòng n cuối cùng của mỗi tệp
+    -n, --lines=[+]n: In tất cả các dòng từ n về sau
+    -c, --byte=[-]n: In số byte n đầu cuối cùng mỗi tệp
+    -q: Không in tiêu đề đầu ra
+    -f: Tiếp tục đọc tập tin cho đến khi CTRL + C
+    --help: Hiển thị các trợ giúp
+    --version: Thông tin về phiên bản và thoát
+```
+<img src=https://i.imgur.com/4ZH4RwB.png>
+
+- **Lệnh head - print HEAD**
+`head` dùng để xem những dòng đầu của tệp tin (theo mặc định là 10 dòng đầu tiên).
+```
+head [tuỳ chọn] [tên file]
+
+Trong đó tùy chọn có thể là:
+    -n, --lines=[-]n: In số dòng n đầu tiên của mỗi tệp
+    -c, --byte=[-]n: In số byte n đầu tiên của mỗi tệp
+    -q: Không in tiêu đề xác định tên tệp
+    -v: Luôn in tiêu đề xác định tên tệp
+    --help: Hiển thị các trợ giúp
+    --version: Thông tin về phiên bản và thoát
+```
+
+- **Ứng dụng vi/vim**
+Vi Editor là trình soạn thảo văn bản ban đầu được tạo ra cho hệ điều hành Unix/Linux. Ngoài ra có một phiên bản mở rộng của Vi Editor là Vim Editor với nhiều chức năng hơn.
+Để cài đặt bộ soạn thảo **vi/vim** trên Ubuntu:
+`sudo apt-get install vim`
+Bộ soạn thảo **vi/vim** chạy ở hai chế độ khác nhau:  
+```
+- Chế độ dòng lệnh command mode, những gì được gõ vào sẽ được hiểu như là lệnh của vi. Vi có rất nhiều lệnh như: tìm kiếm, thay thế, xóa, lưu tâp tin…
+- Chế độ nhập văn bản insert mode, những gì được gõ vào được hiểu là nội dung của tập tin đang soạn thảo.
+```
+Khi bắt đầu sử dụng lệnh vi, vi mặc định ở command mode. Ấn phím lệnh **i, a, o** hoặc **Inserrt** từ chế độ command mode để chuyển sang insert mode. Ấn **Esc** để chuyển đổi qua lại từ command mode với insert mode.  
+Một số lệnh với **vi**:
+```
+- :set nu hiện thị số dòng
+- :set nonu bỏ hiện thị số dòng
+- Sử dụng phím mũi tên hoặc các phím h,l,j,k để dịch trái, phải. lên, xuống
+- :1 để nhảy đến dòng đầu tiên của file
+- :n nhảy đến dòng n
+- $ nhảy xuống cuối dòng
+- :$ nhảy đến dòng cuối của file.
+- 0 nhảy về đầu dòng
+- :0 nhảy về dòng đầu tiên của file.
+- dd xóa một dòng hiện tại
+- ndd xóa n dòng
+- / hay ? để tìm kiếm
+- :w! lưu tập tin
+- :x! lưu tập tin và thoát
+- :wq lưu tập tin và thoát
+- :q! không lưu và thoát
+```
