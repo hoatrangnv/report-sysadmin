@@ -46,14 +46,15 @@
 <a name="introduction"></a>
 # I. Introduction
 
-**System Admin (Sysadmin) chịu trách nhiệm thiết lập và bảo trì hệ thống máy tính. Họ đảm bảo rằng các máy tính trong mạng của công ty, đặc biệt là máy chủ vận hành trơn tru và an toàn. Mô tả công việc của System Admin sẽ cung cấp thêm thông tin về vị trí việc làm này.**  
+**System Admin (Sysadmin) chịu trách nhiệm thiết lập và bảo trì hệ thống máy tính. Họ đảm bảo rằng các máy tính trong mạng của công ty, đặc biệt là máy chủ vận hành trơn tru và an toàn. **  
 
 Vai trò của một `System Admin (Sysadmin)` chủ yếu tập trung vào 
 vận hành hệ thống công nghệ thông tin, ngăn chặn sự cố 
 và cải thiện hiệu năng của toàn hệ thống. 
 Họ giúp hệ thống mạng của công ty được an toàn và hoạt động hiệu quả.
 ```  
-Công việc của System Admin gồm có:
+Công việc của System Admin gồm có:  
+
 - Cấu hình và bảo trì hệ thống mạng máy tính, bao gồm phần cứng, phần mềm hệ thống và ứng dụng.
 - Đảm bảo dữ liệu được lưu trữ an toàn và sao lưu thường xuyên.
 - Chẩn đoán và giải quyết các vấn đề phát sinh về phần cứng, phần mềm, mạng và hệ thống.
@@ -63,3 +64,10 @@ Công việc của System Admin gồm có:
 - Cung cấp hỗ trợ kỹ thuật khi được yêu cầu.
 - Nghiên cứu, đề xuất quy trình tiêu chuẩn để nhân viên tuân thủ từ đó hạn chế sai sót hoặc lỗi cho hệ thống máy tính, hệ thống mạng.
 ```
+
+<a name="workingwithfile"></a>
+# II. Working with file
+
+- ls
+`ls` liệt kê nội dung (file và thư mục) trong thư mục hiện hành. Nó cũng tương tự với việc bạn mở một thư mục và xem nội dung trong đó trên giao diện người dùng.
+<img src=https://i.imgur.com/xiKWnGw.png>
