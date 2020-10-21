@@ -51,7 +51,7 @@ vận hành hệ thống công nghệ thông tin, ngăn chặn sự cố
 và cải thiện hiệu năng của toàn hệ thống. 
 Họ giúp hệ thống mạng của công ty được an toàn và hoạt động hiệu quả.  
 Công việc của System Admin gồm có:
-
+```
 - Cấu hình và bảo trì hệ thống mạng máy tính, bao gồm phần cứng, phần mềm hệ thống và ứng dụng.
 - Đảm bảo dữ liệu được lưu trữ an toàn và sao lưu thường xuyên.
 - Chẩn đoán và giải quyết các vấn đề phát sinh về phần cứng, phần mềm, mạng và hệ thống.
@@ -60,3 +60,4 @@ Công việc của System Admin gồm có:
 - Nghiên cứu và đề xuất các phương pháp mới để cải thiện hệ thống mạng máy tính.
 - Cung cấp hỗ trợ kỹ thuật khi được yêu cầu.
 - Nghiên cứu, đề xuất quy trình tiêu chuẩn để nhân viên tuân thủ từ đó hạn chế sai sót hoặc lỗi cho hệ thống máy tính, hệ thống mạng.
+```
