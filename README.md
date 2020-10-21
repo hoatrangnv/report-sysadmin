@@ -72,11 +72,11 @@ Công việc của System Admin gồm có:
 `ls` liệt kê nội dung (file và thư mục) trong thư mục hiện hành. Nó cũng tương tự với việc bạn mở một thư mục và xem nội dung trong đó trên giao diện người dùng.
 <img src=https://i.imgur.com/xiKWnGw.png>
 
-- **Lệnh cat - concatenate and print files**
+- **Lệnh cat - concatenate and print files**  
 `cat` đọc và in ra nội dung của file ra màn hình.
 <img src=https://i.imgur.com/czm6KtM.png>
 
-- **Lệnh more**
+- **Lệnh more**  
 `more` dùng mở một tệp để đọc tương tác, cho phép di chuyển lên xuống và tìm kiếm.  
 ```
 Dưới đây là một số tùy chọn điển hình của lệnh #more :  
@@ -89,7 +89,7 @@ Dưới đây là một số tùy chọn điển hình của lệnh #more :
 ```
 <img src=https://i.imgur.com/tdk6f2v.png>
 
-- **Lệnh tail - print TAIL**
+- **Lệnh tail - print TAIL**  
 `tail` dùng để xem những dòng đầu của tệp tin (theo mặc định là 10 dòng). Lệnh tail rất hữu ích khi khắc phục sự cố tệp nhật ký.
 ```
 tail [tùy chọn] [tên file]
@@ -105,7 +105,7 @@ Tùy chọn có thể là:
 ```
 <img src=https://i.imgur.com/4ZH4RwB.png>
 
-- **Lệnh head - print HEAD**
+- **Lệnh head - print HEAD**  
 `head` dùng để xem những dòng đầu của tệp tin (theo mặc định là 10 dòng đầu tiên).
 ```
 head [tuỳ chọn] [tên file]
@@ -119,7 +119,7 @@ Trong đó tùy chọn có thể là:
     --version: Thông tin về phiên bản và thoát
 ```
 
-- **Ứng dụng vi/vim**
+- **Ứng dụng vi/vim**  
 Vi Editor là trình soạn thảo văn bản ban đầu được tạo ra cho hệ điều hành Unix/Linux. Ngoài ra có một phiên bản mở rộng của Vi Editor là Vim Editor với nhiều chức năng hơn.  
 Để cài đặt bộ soạn thảo **vi/vim** trên Ubuntu:  
 `sudo apt-get install vim`  
