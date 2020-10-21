@@ -13,7 +13,7 @@
 
 [IV. Package Management](#packagemanagement)  
 
-[V. Boot process]  
+[V. Boot process](#bootprocess)
 - [1. Power Supply Unit](#power)
 - [2. BIOS and CMOS](#biosandcmos)
 - [3. POST tests](#posttests)
