@@ -87,4 +87,4 @@ Dưới đây là một số tùy chọn điển hình của lệnh **more**:
     -p: Không cuộn, thay vào đó xóa màn hình và hiển thị trang kế.
     -c: Không cuộn.
 ```
-<img src=https://i.imgur.com/jZGEUuB.png>
+<img src=https://i.imgur.com/tdk6f2v.png>
