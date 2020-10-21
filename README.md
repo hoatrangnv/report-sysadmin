@@ -1,2 +1,2 @@
 # Những điều cần biết cho sysadmin!
-abc
+chúng ta là gì
