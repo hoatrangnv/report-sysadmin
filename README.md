@@ -1,2 +1,1 @@
-# report-sysadmin
-Kiến thức cơ bản cho sysadmin !
+# Những điều cần biết cho sysadmin!
