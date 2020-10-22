@@ -401,7 +401,7 @@ Các lệnh liên quan tới apt trên Debian:
 <a name="bootprocess"></a>
 # VI. Boot process  
 
-`Linux boot process` là quá trình khởi tạo hệ thống Linux. Nó bao bước từ khi ta bật máy đến khi giao diện người dùng sẵn sàng.
+`Linux boot process` là quá trình khởi tạo hệ thống Linux. Nó bao gồm bước từ khi ta bật máy đến khi giao diện người dùng sẵn sàng.
 
 <a name=power></a>
 ## 1. Power Supply Unit  
@@ -441,10 +441,10 @@ Có 2 **bootloader** phổ biến trên Linux là **GRUB** và **LILO** (tiền 
 
 Trong Linux, các `bootloader` cũng có thể nạp thêm các ramdisk hoặc các `INITRD`, `INITRD` cung cấp một giải pháp: là một tập các chương trình sẽ được thực thi khi **kernel** vừa mới được khởi chạy. Các chương trình này sẽ dò quét phần cứng của hệ thống và xác định xem **kernel** cần được hỗ trợ thêm những gì để có thể quản lý được các phần cứng đó. Chương trình `INITRD` có thể nạp thêm vào **kernel** các module bổ trợ. Khi chương trình `INITRD` kết thúc thì quá trình khởi động Linux sẽ tiếp diễn.  
 
-<a name=oskernelandinit>
+<a name=oskernelandinit></a>
 ## 7. OS Kernel and Init  
 
-Khi **kernel** được khởi chạy xong, nó triệu gọi duy nhất một chương trình tên là **init**. Tiến trình này có PID (process ID) =1, **init** là cha của tất cả các tiến trình khác mà có trên hệ thống Linux này. Do tính chất cực kỳ quan trọng này mà init sẽ không bao giờ bị chết (khi sử dụng lệnh kill) và không được phép chết!
+Khi **kernel** được khởi chạy xong, nó triệu gọi duy nhất một chương trình tên là **init**. Tiến trình này có **PID** (**process ID**) =1, **init** là cha của tất cả các tiến trình khác mà có trên hệ thống Linux này. Do tính chất cực kỳ quan trọng này mà init sẽ không bao giờ bị chết (khi sử dụng lệnh kill) và không được phép chết!
 
 Sau đó, init sẽ xem trong file `/etc/inittab` để biết được nó cần làm gì tiếp theo như: dựa vào `runlevel` mặc định để thực thi các script khởi động (initscript) tương ứng trong thư mục `/etc/rc.d`.  
 
