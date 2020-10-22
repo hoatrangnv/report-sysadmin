@@ -196,12 +196,19 @@ Nếu như một người dùng đã sử dụng quen trên môi trường Windo
 
 Hệ điều hành Linux hình thành từ nhiều thư mục và tập tin khác nhau. Các thư mục có thể lập thành nhiều file system khác nhau, tùy vào cách cài đặt bạn đã chọn. Nhìn chung, đa phần hệ điều hành nằm ở hai file system: **root file system** (file system gốc) được ký hiệu là /, và một file system khác được kết nối theo **/usr** (đọc là user).  
 Thư mục **/bin** chứa các chương trình thi hành được, còn gọi là các binaries (nhị phân). Chúng là chương trình hệ thống chủ yếu. Nhiều lệnh của Linux, chẳng hạn như `ls`, là các chương trình nằm tại các thư mục ấy.  
+
 Thư mục **/sbin** chứa các file nhị phân hệ thống. Hầu hết các tập tin ở đây dùng để quản trị hệ thống. (superuser-bin).  
+
 Thư mục **/etc** rất quan trọng vì chứa nhiều file cấu hình Linux. File mật khẩu passwd nằm ở thư mục này, cũng như fstab , danh sách các file system cần nạp vào khi khởi động máy. Ngoài ra thư mục còn chứa các script khởi động cho Linux, danh sách các host kèm địa chỉ IP, cùng với nhiều thông tin cấu hình khác.  
-Các thư viện dùng chung được chứa trong thư mục **/lib**. Khi dùng chung thư viện, nhiều chương trình sẽ sử dụng lại cùng loại mã, hơn nữa khi được chứa cùng chỗ, thư viện sẽ giúp giảm thiểu kích cỡ chương trình ở khía cạnh thời gian chạy.  
+
+Các thư viện dùng chung được chứa trong thư mục **/lib**. Khi dùng chung thư viện, nhiều chương trình sẽ sử dụng lại cùng loại mã, hơn nữa khi được chứa cùng chỗ, thư viện sẽ giúp giảm thiểu kích cỡ chương trình ở khía cạnh thời gian chạy.  \
+
 Thư mục **/dev** chứa các file đặc biệt gọi là device files (file thiết bị, được hệ thống sử dụng để chạy các phần cứng).  
+
 Thư mục **/tmp** chứa các file tạm mà chương trình tạo ra trong khi chạy. Nếu bạn biết hệ thống máy mình có chương trình tạo ra nhiều file tạm với kích cỡ lớn, bạn nên tạo thư mục /tmp thành một file system riêng thay vì đặt nó vào file system gốc như là một thư mục bình thường. Bởi vì với đà chất chứa các file tạm ngày càng nhiều, file system gốc sẽ nhanh chóng bị đầy.  
+
 Thư mục **/home** là thư mục cơ sở của các home directory cho các user. Quản trị viên thường đặt /home thành file system riêng rẽ nhằm tạo nhiều khoảng trống cho user sử dụng. Ngoài ra nếu hệ thống máy bạn có nhiều user, bạn nên chia thư mục /home thành nhiều file system khác nhau.  
+
 Thư mục **/var** lưu các file có thể thay đổi kích thước theo thời gian. Nhiều file đăng nhập hệ thống (system log file) thường nằm trong thư mục này.  
 
 <a name=tuychonfilesystem></a>
