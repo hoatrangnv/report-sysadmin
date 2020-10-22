@@ -320,3 +320,77 @@ ln -s [file nguồn] [file đích]
 Ở đây ta nhận ra khi tạo file symlink là `symlink.txt` tương ứng với với file `link.txt` thì 2 file này có chỉ số inode khác nhau là 1060499 và 1060500. Ta xóa file `link.txt` thì nội dung trong file `symlink.txt` cũng không còn.  
 Nội dung của `symlink.txt` không hiển thị được vì `symlink.txt` trỏ đến một tập tin khác, mà tập tin này không tồn tại.  
 
+<a name="packagemanagement"></a>
+# V. Package Management  
+
+Các bản phân phối Linux có sự khác nhau chính đó là cách thức thiết lập cấu hình hệ thống của chúng khác nhau. Một số Distro giữ các cấu hình, thiết lập, các file cấu hình ở cùng một nơi (thư mục), một số khác lại lưu ở nhiều nơi trong cấu trúc thư mục. Tiếp theo là quá trình cài đặt, cập nhật các ứng dụng (các gói package) cũng khác nhau tùy vào distro, nhiều distro thực hiện điều này bằng các công cụ quản lý gói (package) như **DPKG** (debian), **APT** (ubuntu, debian), **RPM** (Red Hat), **YUM** …  
+
+## RPM  
+`rpm` (**Red Hat Package Manager**) là một công cụ dùng để quản lý package mặc định và mã nguồn mở mặc định cho các hệ thống dựa trên Red Hat (RHEL, CentOS và Fedora). Công cụ này giúp cho phép chúng ta có thể cài đặt, cập nhật, gỡ cài đặt, truy vấn, xác minh và quản lý các gói phần mềm trên hệ thống. RPM trước đây được gọi là tệp `.rpm` gồm các chương trình và thư viện phần mềm được biên dịch cần thiết cho các package. Tiện ích này chỉ hoạt động với các gói được xây dựng trên định dạng `.rpm`.  
+Chức năng cơ bản lệnh RPM:  
+- **Install**: Sử dụng để cài đặt bất kỳ gói rpm.
+- **Remove**: Sử dụng để xóa hoặc hủy cài đặt bất kỳ gói rpm.
+- **Upgrade**: Sử dụng để cập nhật gói rpm hiện có.
+- **Verify**: Sử dụng để truy vấn bất kỳ gói rpm.
+- **Query**: Sử dụng để xác minh các gói rpm.  
+
+## YUM  
+Lệnh `yum` (**Yellowdog Updater,** **Modified**) trình quản lý package dựa trên RPM, được sử dụng để cài đặt, cập nhật, gỡ bỏ hoặc tìm kiếm các gói phần mềm trong các bản phân phối Linux khác nhau bao gồm CentOS, RHEL và Fedora. `yum` sử dụng nhiều kho lưu trữ của bên thứ ba để cài đặt các gói tự động bằng cách giải quyết các vấn đề phụ thuộc của chúng.  
+
+- Cập nhập tất cả các RPM bằng YUM
+```
+# yum update
+```  
+- Cập nhật một gói RPM cài đặt với YUM
+```
+# yum update package-name
+``` 
+- Cài đặt các gói RPM với YUM
+```
+# yum install package-name
+```  
+Gỡ bỏ các gói cài đặt bằng cách sử dụng YUM
+```
+# yum remove package-name Hoặc # yum erase package-name  
+```  
+
+## DPKG  
+`dpkg` là công cụ quản lý package cho các hệ thống dựa trên Debian. Nó có thể cài đặt, gỡ bỏ, dịch gói, nhưng không thể tự động download và cài đặt các package hoặc các thành phần phụ thuộc. Sử dụng `dpkg` để cài đặt các package với bộ cài đặt đã có ở trên máy.  
+Một số lệnh sử dụng dpkg như sau:  
+- Cài đặt phần mềm/gói với lệnh dpkg
+```
+# dpkg -i package_name.deb  
+```
+- Liệt kê tất cả các gói đã cài đặt
+```
+# dpkg -l 
+```  
+- Xóa các gói đã cài đặt  
+```
+# dpkg -r package_name.deb 
+```  
+- Liệt kê nội dung của một gói  
+```
+# dpkg -c package_name.deb
+```
+
+## APT  
+Lệnh `apt` (**Advanced Package Tool**) là một công cụ được sử dụng để quản lý các gói phần mềm trên các bản phân phối Linux thuộc dòng Ubuntu/Debian. Chúng ta có thể sử dụng nó để tìm và cài đặt các gói mới, cập nhật và nâng cấp gói, loại bỏ các gói, theo dõi tất cả các phần mềm được cài đặt.  
+Các lệnh liên quan tới apt trên Debian:  
+- Cài đặt hoặc nâng cấp một package cụ thể  
+```
+# apt-get install package-name
+```
+- Gỡ bỏ package đã được cài đặt  
+```
+# apt-get autoremove package-name
+```
+- Tìm kiếm tên và thông tin về một package  
+```
+# apt-cache search package-name
+```
+- Cập nhật các package của hệ thống  
+```
+# apt-get update
+```
+
