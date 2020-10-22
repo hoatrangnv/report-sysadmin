@@ -302,6 +302,7 @@ Lệnh tạo hardlink như sau:
 ln [file nguồn] [file đích]
 ```
 <img src=https://i.imgur.com/XSOoy2b.png>  
+
 Ở ví dụ trên ta thấy khi tạo file `link.txt` và sau đó tạo hardlink là `hardlink.txt` thì 2 file này có chỉ số inode giống nhau, nên khi xóa file `link.txt` thì nội dung có trong file `hardlink.txt` vẫn còn.  
 Khi sử dụng lệnh `rm` để xóa file thì làm giảm đi 1 `hardlink`. Khi số lượng `hardlink` giảm còn 0 thì không thể truy cập tới nội dung của file được nữa.  
 
@@ -315,6 +316,7 @@ Lệnh tạo symlink như sau:
 ln -s [file nguồn] [file đích]
 ```
 <img src=https://i.imgur.com/bUbgLv5.png>  
+
 Ở đây ta nhận ra khi tạo file symlink là `symlink.txt` tương ứng với với file `link.txt` thì 2 file này có chỉ số inode khác nhau là 1060499 và 1060500. Ta xóa file `link.txt` thì nội dung trong file `symlink.txt` cũng không còn.  
 Nội dung của `symlink.txt` không hiển thị được vì `symlink.txt` trỏ đến một tập tin khác, mà tập tin này không tồn tại.  
 
