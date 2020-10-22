@@ -131,8 +131,8 @@ Bộ soạn thảo **vi/vim** chạy ở hai chế độ khác nhau:
 Khi bắt đầu sử dụng lệnh **vi**, **vi** mặc định ở **command mode**. Ấn phím lệnh **i, a, o** hoặc **Inserrt** từ chế độ **command mode** để chuyển sang **insert mode**. Ấn **Esc** để chuyển đổi qua lại từ command mode với insert mode.  
 Một số lệnh với **vi**:
 
-- **:set nu** hiện thị số dòng
-- **:set nonu** bỏ hiện thị số dòng
+- **:set nu** hiển thị số dòng
+- **:set nonu** bỏ hiển thị số dòng
 - Sử dụng **phím mũi tên** hoặc các phím **h,l,j,k** để dịch trái, phải, lên, xuống
 - **:1** để nhảy đến dòng đầu tiên của file
 - **:n** nhảy đến dòng n
@@ -147,3 +147,42 @@ Một số lệnh với **vi**:
 - **:x!** lưu tập tin và thoát
 - **:wq** lưu tập tin và thoát
 - **:q!** không lưu và thoát
+
+<a name="redirect"></a>
+# III. Redirect
+
+Trước khi đi vào các lệnh chúng ta đều biết rằng, chương trình đều sinh ra output. Output thì thường bao gồm 2 phần, output mong muốn của một chương trình, và các error messages.  
+Một chương trình chạy trên Linux sẽ gửi đầu ra vào một file đặc biệt là **stdout** (standard output) và error messages đến **stderr** (standard error). Hai file này được link đến màn hình và không được save lại trong file.  
+Thêm vào đó, các chương trình thường lấy đầu vào từ **stdin** (standard input) được đính kèm với bàn phím.  
+I/O rediretion cho phép chúng ta thay đổi nơi output ra và nơi input đến.
+
+## Redirect standard output  
+Để redirect output của một lệnh hay một chương trình ra một file khác **stdout**, chúng ta sử dụng ký hiệu `> [tên file]`. Dưới đây là cách để redirect output của lệnh ls ra một file tên là `list.txt` :  
+<img src=https://i.imgur.com/oXbgs7y.png>
+Chúng ta sẽ thấy lệnh `ls` ở trên không in kết quả vì kết quả đã được redirect đến `list.txt` rồi.  
+
+## Redirect standard error  
+
+Chúng ta đã biết 3 loại file stream là **stdin, stdout, stderr**.
+Shell tham chiếu chúng tương ứng với 3 file descriptor là `0, 1, 2`.
+Shell cho phép chúng ta định nghĩa I/O redirecion bằng cách sử dụng `file descriptor number`.  
+
+Để redirect error chúng ta file sử dụng `file descriptor number` tương ứng là 2:  
+<img src=https://i.imgur.com/rbUJFf6.png>
+Như vậy chúng ta đã không thấy thông báo output error hiển thị trên màn hình nữa mà nó đã được đưa vào trong file `error.txt`.
+
+## Redirect output & error ra cùng một file
+
+Chúng ta có thể sử dụng cách sau để redirect cả error và output ra cùng một file:  
+`> [tên file] 2>&1`  
+Theo cách này, ta sẽ redirect stdout ra một file sau đó redirect stderr ra stdout (lưu ý đúng thứ tự trên nếu không sẽ không chính xác).  
+
+## Redirect standard input
+
+Khi chúng ta sử dụng lệnh `cat` mà không có tham số truyền vào, nó sẽ nhận nội dung mà ta nhập từ bàn phím và sau đó in chúng ra màn hình.  
+Do đó nếu chúng ta redirect đầu vào từ bàn phím thành 1 file, kết quả như sau:  
+<img src=https://i.imgur.com/2BxF2dN.png>
+Sau khi tạo file `input.txt` và nhập vào file này bằng Vi một dòng chữ **Viet Nam** sau đó dùng lệnh `cat` với input đầu vào là file này, chúng ta sẽ có kết quả là dòng chữ **Viet Nam** trên màn hình.  
+
+<a name="filesystem"></a>
+# III. File System
